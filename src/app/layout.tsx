@@ -20,7 +20,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${archivo.variable} antialiased`}>{children}</body>
+      <body className={`${archivo.variable} antialiased`}>
+        {children}
+        <script
+          src="https://mrey-ai.vercel.app/js/embed-mreyagent.js?agentName=addy-knowledge-base&cname=Addy.channn"
+          defer
+        ></script>
+      </body>
     </html>
   );
 }

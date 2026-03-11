@@ -1,20 +1,26 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-6 mix-blend-difference">
+    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 py-6">
       <div className="flex items-center gap-2">
-        <div className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center border-2 border-primary">
-          <span className="text-white font-bold">A</span>
-        </div>
+        <Link href="/" className="flex items-center">
+          <Image 
+            src="/images/logo.png" 
+            alt="Addy Logo" 
+            width={40} 
+            height={40} 
+          />
+        </Link>
       </div>
       <div className="hidden md:flex items-center gap-12">
-        <Link href="#home" className="text-sm font-bold uppercase tracking-widest hover:text-secondary transition-colors">Home</Link>
-        <Link href="#about" className="text-sm font-bold uppercase tracking-widest hover:text-secondary transition-colors">About</Link>
-        <Link href="#projects" className="text-sm font-bold uppercase tracking-widest hover:text-secondary transition-colors">Projects</Link>
-        <Link href="#contact" className="text-sm font-bold uppercase tracking-widest hover:text-secondary transition-colors">Get in Touch</Link>
+        <Link href="#home" className="text-sm font-bold uppercase tracking-widest">Home</Link>
+        <Link href="#about" className="text-sm font-bold uppercase tracking-widest">About</Link>
+        <Link href="#projects" className="text-sm font-bold uppercase tracking-widest">Projects</Link>
+        <Link href="#contact" className="text-sm font-bold uppercase tracking-widest">Get in Touch</Link>
       </div>
     </nav>
   );

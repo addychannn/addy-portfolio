@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -8,46 +9,70 @@ export default function About() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
         {/* Visual Element */}
         <div className="relative">
-          <div className="w-full aspect-square bg-[#E5E5E0] rounded-full overflow-hidden flex items-center justify-center">
-            {/* Abstract floral shape from screenshot */}
-            <div className="absolute top-0 right-0 text-7xl opacity-20">✿</div>
-            <div className="absolute bottom-0 left-0 text-5xl opacity-20 rotate-45">✦</div>
-            <div className="w-3/4 h-3/4 rounded-full bg-white/50 backdrop-blur-sm" />
-          </div>
-          {/* Decorative floral blobs */}
-          <div className="absolute -top-10 -right-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl" />
+          <Image
+            src="/images/image_container.png"
+            alt="sparkle"
+            width={1500}
+            height={1500}
+          />
         </div>
 
         {/* Content */}
         <div>
-          <h2 className="text-6xl font-black mb-8 uppercase tracking-tighter">Hello!</h2>
-          <p className="text-xl font-bold mb-6 text-primary/90">
+          <h2 className="text-8xl font-black mb-8 uppercase tracking-tighter text-[#272D18]">
+            Hello!
+          </h2>
+          <p className="text-xl font-bold mb-6 text-[#272D18]">
             Bridging the gap between Design and Code
           </p>
-          <div className="space-y-6 text-lg text-primary/70">
+          <div className="space-y-6 text-lg text-[#272D18]">
             <p>
-              I am a <span className="font-bold text-primary">UI/UX Designer</span> and <span className="font-bold text-primary">Front-End Developer</span> with nearly 3 years of 
-              professional experience in turning complex ideas into seamless digital realities. I specialize in building responsive, 
-              human-centric web applications that are as technically sound as they are visually stunning.
+              I am a{" "}
+              <span className="font-bold text-[#272D18]">UI/UX Designer</span>{" "}
+              and{" "}
+              <span className="font-bold text-[#272D18]">
+                Front-End Developer
+              </span>{" "}
+              with nearly 3 years of professional experience in turning complex
+              ideas into seamless digital realities. I specialize in building
+              responsive, human-centric web applications that are as technically
+              sound as they are visually stunning.
             </p>
             <ul className="space-y-4">
               <li className="flex gap-3">
                 <span className="text-secondary font-black">✦</span>
-                <p><span className="font-bold text-primary">Design with Intent:</span> I create intuitive interfaces that prioritize the user journey.</p>
+                <p>
+                  <span className="font-bold text-[#272D18]">
+                    Design with Intent:
+                  </span>{" "}
+                  I create intuitive interfaces that prioritize the user
+                  journey.
+                </p>
               </li>
               <li className="flex gap-3">
                 <span className="text-secondary font-black">✦</span>
-                <p><span className="font-bold text-primary">Build with Precision:</span> I write clean, scalable code that brings those designs to life.</p>
+                <p>
+                  <span className="font-bold text-[#272D18]">
+                    Build with Precision:
+                  </span>{" "}
+                  I write clean, scalable code that brings those designs to
+                  life.
+                </p>
               </li>
             </ul>
             <p className="italic">
-              When I'm "AFK": You'll find me sketching new characters, belting out my favorite songs, or being a full-time servant to my cats 🐈.
-              Creativity isn't just my job—it's my lifestyle.
+              When I'm "AFK": You'll find me sketching new characters, belting
+              out my favorite songs, or being a full-time servant to my cats 🐈.
+              Creativity isn't just my job it's my lifestyle.
             </p>
 
             <div className="pt-8 flex gap-4">
-              <button className="sticker bg-primary text-white">Download CV</button>
-              <button className="border-2 border-primary px-8 py-2 rounded-lg font-bold">Get In Touch</button>
+              <button className="bg-primary px-8 py-3 text-white cursor-pointer rounded-lg font-bold hover:bg-primary transition-colors">
+                Download CV
+              </button>
+              <button className="border-2 border-primary px-8 py-3 rounded-lg font-bold hover:bg-primary/5 transition-colors">
+                Get In Touch
+              </button>
             </div>
           </div>
         </div>

@@ -16,7 +16,7 @@ export default function Navbar() {
           />
         </Link>
       </div>
-      <div className="hidden md:flex items-center gap-12">
+      <div className="hidden md:flex items-center gap-12 bg-white/80 backdrop-blur-sm rounded-full px-6 py-2">
         <Link href="#home" className="text-sm font-bold uppercase tracking-widest">Home</Link>
         <Link href="#about" className="text-sm font-bold uppercase tracking-widest">About</Link>
         <Link href="#projects" className="text-sm font-bold uppercase tracking-widest">Projects</Link>

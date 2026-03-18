@@ -76,7 +76,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <Image
-              src="/images/hero_meow.png"
+              src="/images/hero_meow.webp"
               alt="Addy Character"
               fill
               className="object-contain object-right-bottom"
